@@ -19,6 +19,7 @@ int main()
 
     int a[10];
     printf("%ld\n", sizeof(a));
-    printf("%d %d %d %d\n", a, a+1, &a, &a+1);
+    printf("%ld\n ", sizeof(&a));
+    printf("%ld %ld %ld %ld\n", a, a+1, &a, &a+1);
     return 0;
 }
