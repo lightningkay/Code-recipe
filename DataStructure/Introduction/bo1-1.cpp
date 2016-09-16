@@ -1,3 +1,5 @@
+#include "c1.h"
+
 Status InitTriplet(Triplet &T, ElemType v1, ElemType v2, ElemType v3)
 {
     if(!(T = (ElemType *)malloc(3 * sizeof(ElemType))))
