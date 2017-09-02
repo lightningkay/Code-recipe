@@ -1,16 +1,15 @@
-#include "c1.h"
+#include "triplet.hpp"
+#include <iostream>
 
-typedef int ElemType;
-
-#include "c1-1.h"
-#include "bo1-1.h"
 int main()
 {
     Triplet T;
-
-    ElemType e;
-
     InitTriplet(T, 5, 6, 7);
+    for (int i = 0; i < TripletSize; ++i )
+    {
+        std::cout << T[i] << std::endl;
+    }
     DestroyTriplet(T);
 
+    return 0;
 }
