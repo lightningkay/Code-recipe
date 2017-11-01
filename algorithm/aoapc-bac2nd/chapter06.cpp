@@ -1,9 +1,12 @@
-/*************************************************************************
- > File Name: Page_139.cpp
- > Author: 
- > Mail: 
- > Created Time: 2016年04月10日 星期日 13时03分23秒
- ************************************************************************/
+/*
+ * Chapter 6
+ *
+ */
+
+#define BOOST_TEST_MAIN
+#define BOOST_TEST_DYN_LINK
+
+#include <boost/test/unit_test.hpp>
 
 #include<iostream>
 #include<deque>
@@ -61,7 +64,7 @@ void run(int i)
     ready.push_back(i);
 }
 
-int main()
+BOOST_AUTO_TEST_CASE( page139 )
 {
     cin >> t;
     while(t--)
@@ -91,5 +94,4 @@ int main()
         if(t)
             cout << endl;
     }
-    return 0;
 }
